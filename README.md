@@ -1,4 +1,4 @@
-#![screenshot](https://raw.github.com/RiDeag/Svalish/master/Screenshot.png)
+![screenshot](https://raw.github.com/RiDeag/Stines/master/Screenshot.png)
 
  Important
 -----------
