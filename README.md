@@ -5,6 +5,8 @@
 
 * This style is written for, and will only work with seaweedchan's 4chanX fork available [here] [1].
 
+* You MUST have "Current" in your custom navigation.
+
 * Hover over the current board title on the top left to view board list
 
 * For the Quick reply to work properly, you must have "Persistent QR" and "Auto Hide QR" enabled.
@@ -14,6 +16,8 @@
 * Hover your mouse at the bottom left to view thread stats, bottom right to toggle thread watcher and top right to view header bar menu
 
 * Most likely doesn't work on Chrome. If it doesn't, quite frankly I don't want to work on it to get it to work on Chrome.
+
+* This is currently a WIP. There are many many issues and the overall look may change. Be warned.
 
 
 Installation (assuming Firefox)
