@@ -1,3 +1,213 @@
+/*.filterHighlight .post.reply::after {
+  font-family: ionicons !important;
+  font-size: 17px !important;
+  color: #c86263 !important;
+  position: absolute !important;
+  content: "\f108" !important;
+  left: -20px !important;
+  top: 5px !important;
+}*/
+/*
+.postContainer.filterHighlight {
+  background: #fbfbfb !important;
+}*/
+
+#shortcuts a:not(.qr-shortcut),
+.qr-shortcut.disabled {
+  color: #dfe1e6 !important;
+}
+
+.qr-shortcut:not(.disabled) {
+  color: #ffffff !important;
+}
+
+#shortcuts a:hover {
+  color: #fff !important;
+}
+
+#updater {
+  display: none !important;
+}
+
+#shortcuts {
+  position: fixed !important;
+  top: 4px !important;
+  right: 5px !important;
+  color: transparent !important;
+  font-size: 0 !important;
+  cursor: default !important;
+}
+
+#shortcuts a {
+  padding-left: 15px !important;
+}
+
+.expand-all-shortcut,
+.qr-shortcut,
+#shortcuts .settings-link,
+#appchan-gal {
+  font-size: 0 !important;
+}
+
+#appchan-gal::after,
+#shortcuts .settings-link::after,
+.qr-shortcut::after,
+.expand-all-shortcut::after,
+.contract-all-shortcut::after {
+  font-family: ionicons !important;
+  font-size: 16px !important;
+}
+
+#appchan-gal::after {
+  content: "\f147" !important;
+}
+
+#shortcuts .settings-link::after {
+  content: "\f20d" !important;
+}
+
+.qr-shortcut::after {
+  content: "\f16b" !important;
+}
+
+.expand-all-shortcut::after,
+.contract-all-shortcut::after {
+  content: "\f264" !important;
+}
+
+.qr-shortcut.disabled {
+  opacity: 1 !important;
+}
+
+#thread-stats {
+  position: fixed !important;
+  top: 4px !important;
+  right: 134px !important;
+  color: transparent !important;
+  font-size: 0 !important;
+}
+
+#thread-stats:hover::after {
+  cursor: pointer !important;
+  color: #fff !important;
+  padding-bottom: 5px !important;
+}
+
+#thread-stats::after {
+  font-family: ionicons !important;
+  font-size: 16px !important;
+  content: "\f2b5" !important;
+  color: #dfe1e6 !important;
+}
+
+#file-count,
+#page-count,
+#post-count {
+  position: fixed !important;
+  margin-left: -25px !important;
+  background: #32353b !important;
+  font-size: 12px !important;
+  display: none !important;
+  color: #dfe1e6 !important;
+  width: 60px !important;
+  padding-left: 10px !important;
+  text-align: left !important;
+}
+
+#post-count {
+  padding-top: 2px !important;
+  top: 25px !important;
+}
+
+#file-count {
+  top: 44px !important;
+}
+
+#page-count {
+  top: 61px !important;
+  padding-bottom: 5px !important;
+}
+
+#thread-stats:hover #file-count,
+#thread-stats:hover #page-count,
+#thread-stats:hover #post-count,
+#file-count:hover,
+#page-count:hover,
+#post-count:hover {
+  display: inline !important;
+}
+
+#post-count::before {
+  content:"Posts: ";
+}
+#file-count::before {
+  content:"Files: ";
+}
+#page-count:not(.warning)::before {
+  content:"Page: ";
+}
+
+
+/*
+#thread-stats {
+  opacity: 0 !important;
+  position: fixed !important;
+  left: auto !important;
+  right: 50px !important;
+  bottom: auto !important;
+  top: 0 !important;
+  z-index: 4 !important;
+  font-size: 0 !important;
+}
+
+#thread-stats:hover {
+  opacity: 1 !important;
+  cursor: default !important;
+}
+
+#post-count::before {
+  content:"Posts: ";
+}
+
+#post-count {
+  position: fixed !important;
+  bottom: 36px !important;
+  left: 0px !important;
+  width: 52px !important;
+  padding-right: 3px !important;
+  text-align: left !important;
+  font-size: 9pt !important;
+}
+
+#file-count::before {
+  content:"Files: ";
+}
+
+#file-count {
+  position: fixed !important;
+  bottom: 19px !important;
+  left: 0px !important;
+  width: 52px !important;
+  padding-right: 3px !important;
+  text-align: left !important;
+  font-size: 9pt !important;
+}
+
+#page-count:not(.warning)::before {
+  content:"Page: ";
+}
+
+#page-count {
+  position: fixed !important;
+  bottom: 2px !important;
+  left: 0px !important;
+  width: 52px !important;
+  padding-right: 3px !important;
+  text-align: left !important;
+  font-size: 9pt !important;
+}
+*/
+
 @font-face {
 	font-family: 'ionicons';
 	src:url('https://github.com/RiDeag/Stines/raw/master/fonts/ionicons.eot');
@@ -80,13 +290,13 @@
 .post.reply .postNum > a:nth-child(2)::before {
   font-family: ionicons !important;
   font-size: 17px !important;
-  color: #6a727a !important;
+  color: rgba(106,114,122,.5) !important;
   position: absolute !important;
   content: "\f21d" !important;
   top: 10px !important;
-  left: 10px !important;
+  left: 12px !important;
   padding-top: 4px !important;
-  padding-left: 4px !important;
+  padding-left: 6px !important;
   background: #ffffff !important;
   width: 30px !important;
   height: 22px !important;
@@ -96,7 +306,7 @@
 }
 
 .post.reply .postNum > a:nth-child(2):hover::before {
-  color: #859fb9 !important;
+  color: rgba(106,114,122,1) !important;
 }
 
 .post.reply .postNum > a:first-child:hover::before {
@@ -119,13 +329,14 @@
 
 .post.reply .postNum > a:first-child::before {
   font-family: ionicons !important;
-  font-size: 17px !important;
+  font-size: 15px !important;
   color: #6a727a !important;
   position: absolute !important;
-  content: "\f220" !important;
-  left: 17px !important;
+  content: "\f1fe" !important;
+/*  content: "\f220" !important;*/
+  left: 18px !important;
   top: 35px !important;
-  padding: 3px !important;
+  padding: 2px 5px !important;
   background: #fff !important;
   border-radius: 0 0 0 7px  !important;
   box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.1) !important;
@@ -191,11 +402,11 @@
 #board-list {
   color: transparent !important;
 }
-
+/*
 #shortcuts {
   color: transparent !important;
   cursor: default !important;
-}
+}*/
 
 .postContainer {
   background-color: #fff !important;
@@ -306,14 +517,14 @@ body {
   border: 1px solid #ebebeb !important;
   background: #fff !important;
 }
-
+/*
 .cataloglink a::before,
 .navLinks.navLinksBot a[href*="catalog"]::after,
 .cataloglink a::after,
 .navLinks.navLinksBot a[href*="catalog"]::before,
 .settings-link::after {
   color: #d4d9d9 !important;
-}
+}*/
 
 .quotelink.inlined,
 .backlink.inlined,
@@ -395,19 +606,17 @@ body {
   font-size: 9pt !important;
   font-weight: 600 !important;
 }
-
+/*
 .settings-link:hover {
   color: #7c818c !important;
-}
+}*/
 
 .postInfo {
   color: transparent !important;
 }
 
 .deadlink,
-.quotelink.filtered,
-.warning,
-.quotelink.deadlink {
+.warning {
   color: #c97172 !important;
 }
 
@@ -680,6 +889,11 @@ input[type="submit"] {
   transition: color .2s ease !important;
 }
 
+.quotelink.filtered {
+  color: #c97172 !important;
+}
+
+.quotelink.filtered:hover,
 .quotelink.you:hover::after {
   color: #ac4344 !important;
 }
@@ -770,11 +984,12 @@ input[type="submit"] {
     Main Layout
 */
 
-#appchan-gal,
+.sideArrows,
+/*#appchan-gal,*/
 #boardNavDesktopFoot,
 .ad-plea,
-.expand-all-shortcut,
-.contract-all-shortcut,
+/*.expand-all-shortcut,
+.contract-all-shortcut,*/
 #qr .close,
 #qr #autohide,
 .boardBanner > img,
@@ -814,7 +1029,7 @@ body {
 }
 
 #header-bar {
-  height: 30px !important;
+  height: 25px !important;
   text-align: center !important;
   margin: 0 !important;
   padding: 0 !important;
@@ -823,7 +1038,7 @@ body {
 
 #shortcuts::after {
   content: "" !important;
-  height: 30px !important;
+  height: 25px !important;
   width: 100% !important;
   position: fixed !important;
   top: 0 !important;
@@ -853,10 +1068,10 @@ body {
 #custom-board-list .current::before {
   content: attr(title);
   position: fixed !important;
-  top: 1px !important;
-  left: 0 !important;
+  top: -2px !important;
+  left: 2px !important;
   padding: 4px !important;
-  font-size: 11pt !important;
+  font-size: 10pt !important;
   font-weight: normal !important;
   pointer-events: auto !important;
 }
@@ -874,7 +1089,7 @@ body {
 #custom-board-list:hover {
   text-align: left !important;
   position: fixed !important;
-  top: 35px !important;
+  top: 30px !important;
   float: right !important;
   left: 5px !important;
   padding: 5px 5px 5px 10px !important;
@@ -883,7 +1098,7 @@ body {
 
 #custom-board-list:hover::after {
   position: fixed !important;
-  top: 29px !important;
+  top: 24px !important;
   left: 0px !important;
   padding-left: 25px !important;
   content: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAKCAMAAABcxfTLAAAAKlBMVEU2QlM7RlY7RlY3QlM3QlM7Rlc7Rlc7RlY7RlY7RlY3QlMAAAA5Rlo6SF3jJX08AAAADHRSTlP4T1Dt65ydTRQW7ABIn5JhAAAAPklEQVR42k3HyREAIAgEQbwB2fzTtRQtmdc0zRMT+1xXaHQD0L4HduOZ7djkWuGpu+PVtxN+eZJYsAkpYmUB/5AGm0QoWnEAAAAASUVORK5CYII=) !important;
@@ -938,12 +1153,12 @@ body {
   padding-right: 5px !important;
   padding-left: 5px !important;
 }
-
+/*
 #updater,
 .settings-link {
   position: fixed !important;
   top: 5000px !important;
-}
+}*/
 
 #watcher-link.disabled {
   opacity: 0 !important;
@@ -1034,26 +1249,6 @@ body {
   right: -20px !important;
   top: 4px !important;
 }
-
-.post.reply .postNum > a:nth-child(2)::before {
-  font-family: ionicons !important;
-  font-size: 17px !important;
-  color: #6a727a !important;
-  position: absolute !important;
-  content: "\f21d" !important;
-  top: 10px !important;
-  left: 10px !important;
-  padding-top: 4px !important;
-  padding-left: 4px !important;
-  background: #ffffff !important;
-  width: 30px !important;
-  height: 22px !important;
-  border-radius: 7px 0 0 7px  !important;
-  box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.1) !important;
-}
-
-
-
 
 .highlight-own:root .yourPost .post.reply::before {
   position: absolute !important;
@@ -1599,7 +1794,7 @@ body {
 /**
     Quick reply
 */
-
+/*
 .autohide:root #qr.dialog.autohide {
   top: -272px !important;
 }
@@ -1818,6 +2013,11 @@ input[name="sub"] {
   font-size: 0 !important;
 }
 
+.menu-button::after {
+   width: 50px !important;
+  height: 20px !important;
+}
+
 .post.op .menu-button,
 .postContainer .menu-button {
   opacity: 0 !important;
@@ -1836,6 +2036,8 @@ input[name="sub"] {
   font-size: 9pt !important;
   border: 1px solid rgba(103,136,168,.5) !important;
   border-radius: 10px !important;
+  padding-right: 3px !important;
+  padding-left: 3px !important;
 }
 
 .postContainer .menu-button:hover::after {
@@ -1983,7 +2185,7 @@ input[name="sub"] {
 /**
     Updater
 */
-
+/*
 #thread-stats {
   opacity: 0 !important;
   position: fixed !important;
@@ -2041,7 +2243,7 @@ input[name="sub"] {
   text-align: left !important;
   font-size: 9pt !important;
 }
-
+*/
 }
 
 @-moz-document regexp("https?://boards\\.4chan\\.org\\/(.|..|...|....)\\/catalog") {
