@@ -24,18 +24,15 @@
 
 
 #header-bar .menu-button {
-  opacity: 0 !important;
-  position: fixed !important;
-  right: 2px !important;
-  top: 0 !important;
-}
-
-#header-bar .menu-button:hover {
   opacity: 1 !important;
+  position: fixed !important;
+  right: 128px !important;
+  top: 8px !important;
 }
 
 #header-bar {
-  background: #32353b !important;
+/*  background: #32353b !important;*/
+  background: #465773 !important;
 }
 
 #header-bar.dialog:not(.autohide) {
@@ -577,10 +574,10 @@ input[type="submit"] {
 }
 
 #header-bar .menu-button::after {
-  color: #bfcbd8 !important;
+  color: #dfe1e6 !important;
   font-family: ionicons !important;
   content: "\f104" !important;
-  font-size: 9pt !important;
+  font-size: 10px !important;
 }
 
 #shortcuts a {
@@ -675,7 +672,8 @@ input[type="submit"] {
 #post-count {
   position: fixed !important;
   margin-left: -25px !important;
-  background: #32353b !important;
+  background: #465773 !important;
+/*  background: #32353b !important;*/
   font-size: 12px !important;
   display: none !important;
   color: #dfe1e6 !important;
@@ -710,6 +708,80 @@ input[type="submit"] {
 #post-count::before {content:"Posts: ";}
 #file-count::before {content:"Files: ";}
 #page-count:not(.warning)::before {content:"Page: ";}
+
+#custom-board-list .current {
+  opacity: 1!important;
+  font-size: 0 !important;
+  margin: 0 -2px !important;
+  pointer-events: none !important;
+}
+
+#custom-board-list .current::before {
+  font-family: ionicons !important;
+  content: "\f144";
+  position: fixed !important;
+  top: 4px !important;
+  left: 6px !important;
+  font-size: 16px !important;
+  font-weight: normal !important;
+  cursor: pointer !important;
+  pointer-events: auto !important;
+}
+
+#custom-board-list {
+  display: inherit !important;
+  position: fixed !important;
+  top: 2px !important;
+  left: 27px !important;
+  width: auto !important;
+  padding: 2px !important;
+  z-index: 90 !important;
+  white-space: nowrap !important;
+}
+
+#custom-board-list a {
+  font-size: 14px !important;
+  margin: 3px !important;
+}
+
+#custom-board-list a::before {
+  pointer-events: none !important;
+  cursor: default !important;
+  position: relative !important;
+  left: -5px;
+  content: "-";
+}
+
+#shortcuts, 
+#custom-board-list a {
+  transition: opacity .2s ease !important;
+  opacity: 0 !important;
+}
+
+#shortcuts:hover,
+#custom-board-list:hover > a {
+  opacity: 1 !important;
+}
+
+#custom-board-list::after,
+#shortcuts::after {
+  z-index: -1 !important;
+  opacity: 1 !important;
+  position: fixed !important;
+  top: 0px !important;
+  content: "";
+  height: 25px !important;
+}
+
+#custom-board-list::after {
+  left: 0px !important;
+  width: 500px !important;
+}
+
+#shortcuts::after {
+  right: 0px !important;
+  width: 200px !important;
+}
 
 /**
     Icon colours
@@ -820,48 +892,6 @@ body {
   font-family: "Segoe UI", sans-serif !important;
 }
 
-#custom-board-list .current {
-  font-size: 0 !important;
-  margin: 0 -2px !important;
-  pointer-events: none !important;
-}
-
-#custom-board-list .current::before {
-  font-family: ionicons !important;
-  content: "\f144";
-  position: fixed !important;
-  top: 4px !important;
-  left: 6px !important;
-  font-size: 16px !important;
-  font-weight: normal !important;
-  cursor: pointer !important;
-  pointer-events: auto !important;
-}
-
-#custom-board-list {
-  display: inherit !important;
-  position: fixed !important;
-  top: 2px !important;
-  left: 27px !important;
-  width: auto !important;
-  padding: 2px !important;
-  z-index: 90 !important;
-  white-space: nowrap !important;
-}
-
-#custom-board-list a {
-  font-size: 14px !important;
-  margin: 3px !important;
-}
-
-#custom-board-list a::before {
-  pointer-events: none !important;
-  cursor: default !important;
-  position: relative !important;
-  left: -5px;
-  content: "-";
-}
-
 #full-board-list a {
   white-space: pre;
   margin: 0 !important;
@@ -963,7 +993,6 @@ body {
 }
 
 .reply:target::after,
-.post.op.qphl::after,
 .reply.highlight::after,
 .post.reply.qphl::after {
   font-family: ionicons !important;
@@ -1098,7 +1127,6 @@ body {
 }
 
 .opContainer {
-  display: table !important;
   margin-top: -4px !important;
   height: 100% !important;
   width: 100% !important;
@@ -1267,34 +1295,30 @@ body {
   z-index: 1 !important;
 }
 
-.fileText {
-  height: 0 !important;
-  padding: 0 !important;
-  overflow: hidden !important;
+.post.reply .file {
+  height: 100% !important;
+}
+
+.post.reply .fileText {
   position: absolute !important;
-  background: white !important;
-  transition: padding .5s .2s ease !important;
-  margin-left: 0px !important;
+  right: -17px !important;
+  bottom: 0px !important;
+  padding: 5px !important;
+  z-index: 1 !important;
+  background: #fff !important;
+  border-radius: 2px !important;
+  box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.1) !important;
+  opacity: 0 !important;
+
+  transition: opacity .5s .2s ease !important;
 }
 
-.reply .file:hover .fileText {
-  padding: 2px 100px 18px 18px !important;
+.post.reply .fileText:hover {
+  opacity: 1 !important;
 }
 
-.op .file:hover .fileText {
-  padding: 2px 5px 22px 5px !important;
-}
-
-.file {
-  position: relative !important;
-  bottom: 0 !important;
-  left: 0 !important;
-}
-
-.fileText {
-  position: absolute !important;
-  bottom: 0 !important;
-  left: 2px !important;
+.post.op .fileText {
+  margin-left: 20px !important;
 }
 
 .fileThumb img {
