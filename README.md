@@ -13,7 +13,9 @@
 
 * Open the Quick reply by pressing "i" close it by pressing esc.
 
-* Hover your mouse at the bottom left to view thread stats, bottom right to toggle thread watcher and top right to view header bar menu
+* Hover your mouse on the right of the header bar to view the header shortcuts, hover the left to view your board list.
+
+* Hover the bottom right of the replies to view the postInfo.
 
 * Most likely doesn't work on Chrome. If it doesn't, quite frankly I don't want to work on it to get it to work on Chrome.
 
