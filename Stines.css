@@ -53,7 +53,8 @@
 }
 
 #custom-board-list a:hover {
-  color: #fff !important;
+  color: #484848 !important;
+  border-bottom: 1px solid #ed4242 !important;
 }
 
 #custom-board-list .current:hover::before {
@@ -594,7 +595,7 @@ input[type="submit"] {
 }
 
 #shortcuts a:hover {
-  color: #fff !important;
+  color: #484848 !important;
 }
 
 #updater {
@@ -661,7 +662,7 @@ input[type="submit"] {
 
 #thread-stats:hover::after {
   cursor: pointer !important;
-  color: #fff !important;
+  color: #484848 !important;
   padding-bottom: 5px !important;
 }
 
@@ -677,11 +678,11 @@ input[type="submit"] {
 #post-count {
   position: fixed !important;
   margin-left: -25px !important;
-  background: #465773 !important;
+  background: #fff !important;
 /*  background: #32353b !important;*/
   font-size: 12px !important;
   display: none !important;
-  color: #dfe1e6 !important;
+  color: #b5b6ba !important;
   width: 60px !important;
   padding-left: 10px !important;
   text-align: left !important;
@@ -738,7 +739,6 @@ input[type="submit"] {
   color: #3d3d3d !important;
   font-weight: 600 !important;
   border-bottom: 1px solid #427fed !important;
-  padding-bottom: 4px !important;
 }
 
 #custom-board-list .current:not(:first-of-type){
@@ -759,6 +759,7 @@ input[type="submit"] {
 }
 
 #custom-board-list a {
+  padding-bottom: 4px !important;
   font-size: 14px !important;
   margin: 3px !important;
 }
