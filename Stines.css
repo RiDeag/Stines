@@ -76,10 +76,6 @@
   border-radius: 0 !important;
 }
 
-.threadContainer {
-  border-left: 20px solid #f4f4f4 !important;
-}
-
 #globalMessage {
   border-radius: 5px !important;
   border: 1px solid #eeeeee !important;
@@ -162,7 +158,7 @@
 
 body {
 /*  background: #f2f2f2 !important;*/
-  background: #e5e5e5 !important;
+  background: #EFEFEF !important;
   color: #454545 !important;
 }
 
@@ -528,7 +524,7 @@ input[type="submit"] {
 }
 
 .quotelink.you:after {
-  content: "@RiDeag";
+  content: "@You";
   font-size: 10pt !important;
   color: #c97172 !important;
   transition: color .2s ease !important;
@@ -820,7 +816,7 @@ input[type="submit"] {
 .backlink:after {
   color: #b1bbc3 !important;
   font-size: 12px !important;
-  opacity: .5 !important;
+  opacity: .7 !important;
 }
 
 /*Hovered and inlined backlinks*/
@@ -1003,13 +999,9 @@ body {
 }
 
 .threadContainer {
+  border-left: none !important;
   padding-left: 0 !important;
-  margin-left: 1px !important;
-}
-
-.threadContainer .postContainer {
-  max-width: 99.7% !important;
-  min-width: 99.7% !important;
+  margin-left: 20px !important;
 }
 
 .reply:target::after,
