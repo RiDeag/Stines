@@ -520,7 +520,7 @@ input[type="submit"] {
 }
 
 .quotelink.you:after {
-  content: "@RiDeag";
+  content: "@You";
   font-size: 10pt !important;
   color: #c97172 !important;
   transition: color .2s ease !important;
@@ -871,8 +871,17 @@ div.center,
   margin-right: 50px !important;
 }
 
+.thread:not(:first-of-type) {
+  margin-top: 30px !important;
+}
+
 .thread {
-  margin-top: 15px !important;
+  margin-top: 20px !important;
+}
+
+.threadContainer {
+  position: relative !important;
+  z-index: 1 !important;
 }
 
 body {
@@ -2023,4 +2032,3 @@ textarea:focus {
 }
 
 }
-
