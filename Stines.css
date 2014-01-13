@@ -79,7 +79,7 @@
 }
 
 .post.reply {
-  background: transparent !important;
+  background: #fff !important;
 }
 
 #qp .yourPost .post.reply, 
@@ -987,11 +987,12 @@ body {
 .reply:target::after,
 .reply.highlight::after,
 .post.reply.qphl::after {
-  font-family: ionicons !important;
-  font-size: 17px !important;
-  color: #c86263 !important;
+  font-family: FontAwesome !important;
+  font-size: 18px !important;
+  /*color: #c86263 !important;*/
+color: #5E5C69 !important;
   position: absolute !important;
-  content: "\f108" !important;
+  content: "\f0a5" !important;
   right: -20px !important;
   top: 4px !important;
 }
@@ -1135,10 +1136,6 @@ body {
 
 .opContainer.expanded-image .nameBlock {
   margin-left: 15px !important;
-}
-
-.opContainer.expanded-image .fileThumb {
-  width: calc(100% - 40px) !important;
 }
 
 .op {
